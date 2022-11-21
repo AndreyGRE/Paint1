@@ -1,0 +1,33 @@
+﻿<Window x:Class="ver2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ver2"
+        mc:Ignorable="d"
+        Title="Рисовалка" Height="450" Width="800">
+    <Grid Margin="0,0,0,-9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="455*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="337*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="318*"/>
+            <RowDefinition Height="125*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="b1" Content="Ручка" Margin="0,68,353,0" Height="26" VerticalAlignment="Top" Click="b1_Click" HorizontalAlignment="Right" Width="62"/>
+        <Button x:Name="b2" Content="Линия" Margin="0,101,354,0" HorizontalAlignment="Right" Width="61" Height="30" VerticalAlignment="Top" Click="b2_Click"/>
+        <Button x:Name="b3" Content="Овал" Margin="0,139,353,0" HorizontalAlignment="Right" Width="62" Height="29" VerticalAlignment="Top" Click="b3_Click"/>
+        <Canvas x:Name="canvas" Margin="145,0,0,40" MouseDown="canvas_MouseDown_1" MouseMove="canvas_MouseMove_1" Background="#FFF5F9F9" HorizontalAlignment="Left" Width="629" Grid.ColumnSpan="4" Height="256" VerticalAlignment="Bottom"/>
+        <Border BorderBrush="Black" BorderThickness="1" Height="280" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="656" Margin="137,0,0,29" Grid.ColumnSpan="4"/>
+        <Label x:Name="lb2" Content="" HorizontalAlignment="Right" Margin="0,56,273,43" Background="#FFE6FF00" Grid.Row="1" Width="89" MouseMove="Label_MouseDown" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lb4" Content="" HorizontalAlignment="Right" Margin="0,83,272,15" Grid.Row="1" Background="#FF13FF00" Width="93" MouseMove="Label_MouseDown" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lb1" Content="" HorizontalAlignment="Right" Margin="0,56,366,43" Grid.Row="1" Background="#FF0004FF" Width="82" MouseMove="Label_MouseDown" MouseDown="Label_MouseDown"/>
+        <Label x:Name="lb3" Content="" HorizontalAlignment="Right" Margin="0,84,365,15" Grid.Row="1" Background="#FFFF0101" Width="85" MouseMove="Label_MouseDown" MouseDown="Label_MouseDown"/>
+        <Button x:Name="btt4" Content="прямоуг" HorizontalAlignment="Right" Margin="0,178,353,0" VerticalAlignment="Top" Click="btt4_Click_1" Height="32" Width="62" />
+        <Label Content="Выбираем цвет" HorizontalAlignment="Left" Margin="74,29,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
